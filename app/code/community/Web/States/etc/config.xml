@@ -50,13 +50,13 @@
     </global>
     <admin>
         <routers>
-            <web_states>
-                <use>admin</use>
+            <adminhtml>
                 <args>
-                    <module>Web_States</module>
-                    <frontName>states</frontName>
+                    <modules>
+                        <web_states after="Mage_adminhtml">Web_States_Adminhtml</web_states>
+                    </modules>
                 </args>
-            </web_states>
+            </adminhtml>
         </routers>
     </admin>
     <adminhtml>
